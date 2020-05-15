@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button class="userinfo-avatar" style="background-image: url({{avatarUrl}});margin:5px;" size="default"></button>
+    {{ nickName }}
+    <view class="userinfo-nickname-wrapper">
+      <button class="userinfo-nickname" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" >点击登录</button>
+    </view>
+  </view>
+
+  <view>
+    <button type="default" open-type="getPhoneNumber" bindgetphonenumber="getMobile">获取手机号</button>
+  </view>
+</view>

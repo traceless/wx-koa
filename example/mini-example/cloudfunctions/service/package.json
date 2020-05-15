@@ -1,0 +1,19 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "extend": "^3.0.2",
+    "koa": "^2.11.0",
+    "koa-router": "^8.0.8",
+    "tencentcloud-sdk-nodejs": "^3.0.165",
+    "wx-koa": "^1.0.0",
+    "wx-server-sdk": "latest"
+  }
+}
