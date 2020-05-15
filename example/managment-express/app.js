@@ -6,8 +6,8 @@ const bodyParser = require('body-parser');
 const request = require('request')
 
 const ENV = 'test-tp1cj'
-const appId = 'wx12341234'
-const appSecret = 'fcf9112341234'
+const appId = 'appId'
+const appSecret = 'appSecret'
 
 const url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${appId}&secret=${appSecret}`
 let accessToken = '32_vb123Lk37ra11rv-kicXEez1No75n3hG6KxEeH5zF6tyVGSXOBsilBCeFL94XtQJMBH7s5kyT2l9tJ8O4jlrDueYIz-ma7jbl_JMOhc73U6Ak8J7hXPxNJhRZIWQ_zvSuGhJh5c3MeRSLcAJAWXQ'

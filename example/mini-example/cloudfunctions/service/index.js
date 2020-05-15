@@ -49,7 +49,10 @@ exports.main = async(event, context) => {
   // 把cloudId的对象放到req.body中，比如获取手机号
   event.data.weRunData = event.weRunData
   const wxContext = cloud.getWXContext()
-  return app.service(event, wxContext)
+  return app.service(event, wxContext, (req, res) =>{
+    // 可以改变req,res 对象相关属性，这里是处理之前的。
+    req.headers.field
+  })
 }
 
 let event = {}

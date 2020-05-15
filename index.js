@@ -46,14 +46,17 @@ class WxKoa extends Koa {
     * @param {object} [event.data] request data
     *
     */
-  async service(event, wxContext) {
-    if(!wxContext){
+  async service(event, wxContext, customReqRes) {
+    if (!wxContext) {
       throw new Error('微信上下文参数不能为空')
     }
     const { req, res } = mockReqRes(event)
-    const handleRequest = this.callback()
+    if (typeof (customReqRes) === 'function') {
+      customReqRes(req, res)
+    }
+    const myHandleRequest = this.callback()
     req.wxContext = wxContext
-    return handleRequest(req, res)
+    return myHandleRequest(req, res)
   }
 
   createContext(req, res) {

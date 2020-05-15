@@ -1,6 +1,6 @@
 {
   "name": "wx-koa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": " Develop wechat applets like KOA ",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,10 @@
   "keywords": [
     "koa",
     "wx-koa"
+  ],
+  "files": [
+    "index.js",
+    "mockReqRes.js"
   ],
   "author": "docter",
   "license": "ISC",
