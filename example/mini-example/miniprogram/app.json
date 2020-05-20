@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/userConsole/userConsole",
     "pages/chooseLib/chooseLib"
   ],
   "window": {

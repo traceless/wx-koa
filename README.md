@@ -17,8 +17,8 @@
 ```
 const Koa = require('wx-koa').WxKoa
 const app = new Koa()
-const WxRouter = require('wx-koa').WxRouter
-const router = new WxRouter()
+const Router = require('wx-koa').WxRoute
+const router = new Router()
 
 router.all('/*', (ctx, next) => {
   // 实现你的业务
