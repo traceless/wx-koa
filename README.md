@@ -52,7 +52,7 @@ wx.cloud.callFunction({
 1. 迁移到线下服务器来，迁移成本主要是在数据库的访问层，貌似跟原生的mongodb操作方式有些不太一样。目前不知道它们是不是mongodb数据库，如果是的话，理论上可以使用自己的mongodb客户端模块（参考了腾讯云数据库），它们连接数据库也是通过secretid,secretkey，可以查看他们代码找到获取这2个钥匙的入口，然后放到自己mongodb客户端模块中，这里我没有去研究实践，小伙伴可以去搞搞哦，整好留言给我吧。
 2. 既然是小程序，那么管理后台如何访问这些数据库数据？或者访问这些云函数？云开发提供了相关的api接口。example中managment-express项目是一个简单云函数代理访问的后台服务，可以满足你的需求哦。里面配置 ENV 和appid, appsecret，然后就可以访问到云函数接口，跟普通ajax保持请求一致。
 
-附上最近做的小程序码，支持订阅RSS，微博等信息，支持黑暗模式，很酷的
+附上最近做的小程序叫 即刻阅 ，支持订阅RSS，微博等信息，支持黑暗模式，很酷的，可以喵喵哦。
 
 ![即刻阅](https://duckfiles.oss-cn-qingdao.aliyuncs.com/eleduck/image/5f3695cf-ed32-43ba-a6da-d64f6f980272.png)
 
